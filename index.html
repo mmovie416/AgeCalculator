@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+      <div class="content">
+        <div class="input">
+            <div class="days">
+              <label for="day">DAY</label>
+              <div class="warning dayfield"> Field Required </div>
+              <input type="text" id="day" placeholder="DD">
+              <div class="wrongDay"> Must be a valid day </div>  
+              <div class="wrongDate"> Must be a valid date </div>
+            </div>
+            
+            <div class="months">
+              <label for="month">MONTH</label>
+              <div class="warning monthfield"> Field Required </div>
+              <input type="text" id="month" placeholder="MM">
+              <div class="wrongMonth"> Must be a valid month </div>  
+            </div>
+            
+            <div class="years">
+              <label for="year">YEAR</label>
+              <div class="warning yearfield"> Field Required </div>
+              <input type="text" id="year" placeholder="YYYY">
+              <div class="wrongYear"> Must be in the past</div>  
+            </div> 
+        </div>
+
+        <div class="line"></div>
+        <img class="btn" src="assets/images/icon-arrow.svg" alt="">
+        <img class="btnMobile" src="assets/images/icon-arrow.svg" alt="">
+
+        <div class="result">
+            <div class="result1">
+              <p>--</p><div>years</div>
+            </div>
+            <div class="result2">
+              <p>--</p><div>months</div>
+            </div>
+            <div class="result3">
+              <p>--</p><div>days</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Mugiwara</a>.
+      </div>
+
+    </div>
+    
+  
+  <script src="script.js"></script>
+</body>
+</html>

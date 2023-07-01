@@ -1,0 +1,246 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.container{
+	background-color: hsl(0, 0%, 86%);
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+}
+
+.container .content{
+	background-color: white;
+	margin: auto;
+	width: 50%;
+	height: 73%;
+	padding: 3%;
+	border-radius: 15px 15px 195px 15px;
+	position: relative;
+}
+
+.container .content .input{
+	display: flex;
+}
+
+.container .content .input .days{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.container .content .input .months{
+	display: flex;
+	flex-direction: column;
+	margin-left: -11%;
+}
+
+.container .content .input .years{
+	display: flex;
+	flex-direction: column;
+	margin-left: -11%;
+}
+
+.container .content .btn{
+	position: absolute;
+	display: flex;
+	left: 85%;
+	top: 27%;
+	background-color: hsl(259, 100%, 65%);
+	padding: 3%;
+	border-radius: 50%;
+}
+
+.container .content img:hover{
+	background-color: hsl(0, 0%, 8%);
+	cursor: pointer;
+}
+
+.container .content .btnMobile{
+	display: none;
+}
+
+.line::before{
+	content: "";
+	border-bottom: 1px solid hsl(219, 9%, 45%);
+	width: 91%;
+	position: absolute;
+	top: 37%;
+}
+.warning{
+	display: none;
+}
+
+.wrongDay,.wrongMonth,.wrongYear,.wrongDate{
+	display: none;
+}
+
+label{
+	font-family: Poppins;
+}
+
+input[type="text"]::-webkit-input-placeholder  {
+  font-size: 32px;
+  font-family: Poppins;
+}
+
+input[type="text"]::-moz-input-placeholder{
+  font-size: 32px;
+  font-family: Poppins;
+}
+
+input[type="text"]::-ms-input-placeholder{
+  font-size: 32px;
+  font-family: Poppins;
+}
+
+input[type="text"]{
+	margin-top: 5%;
+	margin-bottom: 19%;
+	padding: 5%;
+	width: 51%;
+	font-size: 25px;
+	border-radius: 7px;
+}
+
+.container .content .result{
+	margin-top: -3%;
+}
+
+.container .content .result .result1{
+	display: flex;
+}
+
+.container .content .result .result1 p, .container .content .result .result1 div{
+	font-size: 73px;
+	font-family: Poppins;
+}
+
+.container .content .result .result2{
+	display: flex;
+}
+
+.container .content .result .result2 p, .container .content .result .result2 div{
+	font-size: 73px;
+	font-family: Poppins;
+}
+
+.container .content .result .result3{
+	display: flex;
+}
+
+.container .content .result .result3 p, .container .content .result .result3 div{
+	font-size: 73px;
+	font-family: Poppins;
+}
+
+p{
+	color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 375px){
+
+	.container .content{
+		background-color: white;
+		margin: auto;
+		width: 85%;
+		height: 85%;
+		padding: 3%;
+		border-radius: 15px 15px 75px 15px;
+		position: relative;
+		display: grid;
+	}
+
+	.container .content .input{
+		margin: auto;
+	}
+
+	input[type="text"]{
+		margin-top: 5%;
+		margin-bottom: 19%;
+		padding: 5%;
+		width: 79%;
+		font-size: 25px;
+		border-radius: 7px;
+	}
+
+	.container .content .input .days{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container .content .input .months{
+		display: flex;
+		flex-direction: column;
+		margin-left: 3%;
+	}
+
+	.container .content .input .years{
+		display: flex;
+		flex-direction: column;
+		margin-left: 3%;
+	}
+
+	input[type="text"]::-webkit-input-placeholder  {
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	input[type="text"]::-moz-input-placeholder{
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	input[type="text"]::-ms-input-placeholder{
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	.container .content .btnMobile{
+		position: absolute;
+		display: flex;
+		left: 40%;
+		top: 30%;
+		background-color: hsl(259, 100%, 65%);
+		padding: 3%;
+		border-radius: 50%;
+	}
+
+	.container .content .btn{
+		display: none;
+	}
+
+	.line::before{
+		content: "";
+		border-bottom: 1px solid hsl(219, 9%, 45%);
+		width: 91%;
+		position: absolute;
+		top: 37%;
+	}
+
+	.container .content .result{
+		margin-top: 17%;
+	}
+
+	.container .content .result .result1 p, .container .content .result .result1 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}
+
+	.container .content .result .result2 p, .container .content .result .result2 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}	
+
+	.container .content .result .result3 p, .container .content .result .result3 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}		
+
+}
