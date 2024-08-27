@@ -110,7 +110,7 @@ input[type="text"]{
 }
 
 .container .content .result{
-	margin-top: -3%;
+	margin-top: 1%;
 }
 
 .container .content .result .result1{
@@ -150,7 +150,7 @@ p{
 		background-color: white;
 		margin: auto;
 		width: 85%;
-		height: 85%;
+		height: 91%;
 		padding: 3%;
 		border-radius: 15px 15px 75px 15px;
 		position: relative;
@@ -225,7 +225,7 @@ p{
 	}
 
 	.container .content .result{
-		margin-top: 17%;
+		margin-top: 25%;
 	}
 
 	.container .content .result .result1 p, .container .content .result .result1 div{
@@ -242,5 +242,114 @@ p{
 		font-size: 53px;
 		font-family: Poppins;
 	}		
+
+}
+
+@media screen and (min-width:376px) and (max-width: 768px){
+
+	.container{
+		place-content: center;
+	}
+
+	.container .content{
+		background-color: white;
+		margin: auto;
+		width: 85%;
+		height: 95%;
+		padding: 3%;
+		border-radius: 15px 15px 75px 15px;
+		position: relative;
+		display: grid;
+	}
+
+	.container .content .input{
+		margin: auto;
+	}
+
+	input[type="text"]{
+		margin-top: 5%;
+		margin-bottom: 19%;
+		padding: 5%;
+		width: 79%;
+		font-size: 25px;
+		border-radius: 7px;
+	}
+
+	.container .content .input .days{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container .content .input .months{
+		display: flex;
+		flex-direction: column;
+		margin-left: 3%;
+	}
+
+	.container .content .input .years{
+		display: flex;
+		flex-direction: column;
+		margin-left: 3%;
+	}
+
+	input[type="text"]::-webkit-input-placeholder  {
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	input[type="text"]::-moz-input-placeholder{
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	input[type="text"]::-ms-input-placeholder{
+	  font-size: 23px;
+	  font-family: Poppins;
+	}
+
+	.container .content .btnMobile{
+		position: absolute;
+		display: flex;
+		left: 40%;
+		top: 30%;
+		background-color: hsl(259, 100%, 65%);
+		padding: 3%;
+		border-radius: 50%;
+	}
+
+	.container .content .btn{
+		display: none;
+	}
+
+	.line::before{
+		content: "";
+		border-bottom: 1px solid hsl(219, 9%, 45%);
+		width: 91%;
+		position: absolute;
+		top: 37%;
+	}
+
+	.container .content .result{
+		margin-top: 19%;
+	}
+
+	.container .content .result .result1 p, .container .content .result .result1 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}
+
+	.container .content .result .result2 p, .container .content .result .result2 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}	
+
+	.container .content .result .result3 p, .container .content .result .result3 div{
+		font-size: 53px;
+		font-family: Poppins;
+	}	
+
+	.attribution{
+		margin-top: 7%;
+	}	
 
 }
